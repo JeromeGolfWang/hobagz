@@ -48,8 +48,14 @@
 
         .gallery img {
             width: 100%;
+            max-width: 300px; /* Set a maximum width for all images */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .large-image {
+            max-width: 300px; /* Specific size for the large image */
+            margin: auto;
         }
 
         .divider-text {
@@ -58,12 +64,6 @@
             font-weight: bold;
             max-width: 800px;
             animation: typing 3s steps(30) 1 normal both;
-        }
-
-        .divider-text span {
-            display: inline-block;
-            transform: rotate(-2deg); /* slight skew for typewriter effect */
-            animation: wiggle 0.15s infinite alternate;
         }
 
         footer {
@@ -79,15 +79,10 @@
             text-decoration: none;
         }
 
-        /* Keyframe animations for typing effect and wiggle */
+        /* Keyframe animations for typing effect */
         @keyframes typing {
             from { width: 0; }
             to { width: 100%; }
-        }
-
-        @keyframes wiggle {
-            from { transform: rotate(-2deg); }
-            to { transform: rotate(2deg); }
         }
     </style>
 </head>
@@ -97,11 +92,13 @@
         <p>We do not question the original output.<br>
         We cannot know the original input.<br>
         We are outputs within the original output.<br>
-        Our symbol is HO.<br>
+        We are an O within the OO.
+        The OO evolves and so must we.
+        We are the humans, the HO.<br>
         We are birthed from HOs.<br>
         HOs creating human and non-human HOs.<br>
         Long live HOs.<br>
-        It’s HOs forever until we die.<br>
+        It is HOs until the end.<br>
     </header>
 
     <main>
@@ -125,7 +122,7 @@
         </p>
 
         <section class="gallery">
-            <img src="bag7.jpg" alt="HO Bag 7">
+            <img src="bag7.jpg" alt="HO Bag 7" class="large-image">
         </section>
     </main>
 
